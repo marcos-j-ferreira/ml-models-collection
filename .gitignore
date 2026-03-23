@@ -1,0 +1,4 @@
+/venv
+*.sh
+.env
+*.log
