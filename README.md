@@ -48,6 +48,34 @@ It was my first deep dive into machine learning, where I spent time understandin
 ```
 
 ```
+---
+# The second model - Embedding
+
+> What is an Embedding?
+
+An embedding is a way to represent discrete items, like words or sentences, as vectors of numbers.
+These vectors capture semantic meaning: similar words or sentences have vectors that are close together
+in the embedding space.
+
+Embeddings are used in machine learning to allow models to process text, images, or other categorical
+data in a numerical form. For text, embeddings are usually learned from data and help the model
+understand relationships between words.
+
+Example: a very small embedding table for 4 words with 3-dimensional vectors:
+
+```md
++--------+-------------------+
+| Word   | Embedding (3D)    |
++--------+-------------------+
+| i      | [0.1, 0.5, -0.2] |
+| love   | [0.7, 0.3, 0.0]  |
+| python | [0.4, -0.1, 0.6] |
+| code   | [0.5, 0.2, 0.1]  |
++--------+-------------------+
+``` 
+
+Each row maps a word to a vector. These vectors can be used as inputs to a model or to
+compute similarity between words.
 
 ---
 
